@@ -1,3 +1,20 @@
+const path = require(`path`);
+
+// pages locale
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+  deletePage(page);
+  // You can access the variable "locale" in your page queries now
+  // console.log("***** page", page)
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      locale: page.context.intl.language,
+    },
+  });
+};
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `

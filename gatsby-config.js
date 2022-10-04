@@ -34,6 +34,19 @@ module.exports = {
       options: contentfulConfig,
     },
     {
+      resolve: `gatsby-plugin-intl-v4`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/locales`,
+        // supported language
+        languages: [`en-US`, `es`],
+        // language file path
+        defaultLanguage: `en-US`,
+        // option to redirect to `/en` when connecting `/`
+        redirect: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gatsby Starter Landing Page`,
