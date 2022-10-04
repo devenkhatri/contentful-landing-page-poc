@@ -2,7 +2,7 @@ import React from "react";
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl-v4";
 
 const languageName = {
-  "en-US": "English",
+  en: "English",
   es: "Spanish",
 };
 
