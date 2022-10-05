@@ -11,11 +11,13 @@ export default function Layout(props) {
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
       <header className={styles.header}>
-        <Link to="/">
+        <Link to="/" style={{ width: "80%" }}>
           {props.title || `Landing Page PoC`} : <FormattedMessage id="check" />
         </Link>
+        <div style={{ width: "20%" }}>
+          <Language />
+        </div>
       </header>
-      <Language />
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
         <a href="https://gatsbyjs.com">Built with Gatsby</a>

@@ -21,6 +21,7 @@
 
 .header {
   composes: container;
+  display: flex;
 }
 
 .header a {

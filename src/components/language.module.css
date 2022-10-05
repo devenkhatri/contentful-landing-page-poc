@@ -1,0 +1,23 @@
+.language {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.language li {
+  float: left;
+  display: block;
+  position: relative;
+  z-index: 500;
+  margin: 0 1px;
+}
+
+.language li a {
+  display: block;
+  padding: 0 5px;
+  font-weight: 700;
+  font-size: medium;
+  height: 20px;
+  text-decoration: none;
+  text-align: right;
+}
